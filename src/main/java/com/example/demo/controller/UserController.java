@@ -29,7 +29,7 @@ public class UserController {
 
     @PostMapping("/delete")
     public void removeStudent(@RequestBody Student student) {
-        studentMapper.deleteById((Serializable) student);
+        studentMapper.deleteById(student);
     }
 
     @PostMapping("/update")
